@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#142b68">
+    <title>A Little World of Sanya 💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="floating-decorations" aria-hidden="true">
+        <span>♡</span>
+        <span>✦</span>
+        <span>🪷</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>💙</span>
+    </div>
+
+    <main class="website-container">
+
+        <!-- SCREEN 1: SECRET ENTRY -->
+        <section id="welcome-screen" class="screen active">
+            <div class="royal-card">
+                <div class="top-decoration">✧･ﾟ: *✧･ﾟ:* ♡ *:･ﾟ✧*:･ﾟ✧</div>
+
+                <p class="eyebrow">A LITTLE SECRET AWAITS</p>
+
+                <h1>Welcome to<br><span>Sanya's World</span></h1>
+
+                <div class="lotus-decoration">🪷</div>
+
+                <p class="description">
+                    A tiny world filled with memories, surprises,
+                    and a little something special. 💌
+                </p>
+
+                <form id="name-form">
+                    <label for="first-name">First things first...</label>
+
+                    <input
+                        type="text"
+                        id="first-name"
+                        placeholder="Enter your first name ♡"
+                        autocomplete="given-name"
+                        required
+                    >
+
+                    <button type="submit" class="primary-button">
+                        Unlock My Surprise ♡
+                    </button>
+                </form>
+
+                <p id="name-message" class="message" role="status"></p>
+
+                <div class="bottom-decoration">
+                    MADE WITH ♡ BY GAURI
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SCREEN 2: RELATIONSHIP TEST -->
+        <section id="relationship-screen" class="screen">
+            <div class="royal-card">
+
+                <p class="eyebrow">IDENTITY CHECK ✨</p>
+
+                <h2>Wait a second! 💙</h2>
+
+                <p class="description">
+                    Who are you to the owner of this website?
+                </p>
+
+                <div class="relationship-options">
+
+                    <button class="relationship-button" data-relation="bff">
+                        💗 Bffffff Forever
+                    </button>
+
+                    <button class="relationship-button" data-relation="lover">
+                        💋 Lover
+                    </button>
+
+                    <button class="relationship-button" data-relation="classmate">
+                        📚 Classmate
+                    </button>
+
+                    <button class="relationship-button" data-relation="enemy">
+                        😈 Enemy
+                    </button>
+
+                </div>
+
+                <p id="relationship-message" class="message" role="status"></p>
+
+                <div class="bottom-decoration">
+                    ONLY THE REAL ONES KNOW ♡
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SCREEN 3: SANYA'S PROFILE -->
+        <section id="profile-screen" class="screen">
+            <div class="profile-card">
+
+                <p class="eyebrow">✧ THE GIRL, THE MYTH, THE LEGEND ✧</p>
+
+                <h2>Meet the Princess 👑</h2>
+
+                <div class="photo-frame">
+                    <img
+                        src="sanyaimg.jpeg"
+                        alt="A lovely photograph of Sanya"
+                        class="profile-photo"
+                    >
+                    <span class="photo-decoration">♡</span>
+                </div>
+
+                <h1 class="profile-name">Sanya Singh</h1>
+                <p class="nickname">aka Suneo 🤭💙</p>
+
+                <div class="bio-grid">
+
+                    <div class="bio-item">
+                        <span class="bio-icon">🎂</span>
+                        <h3>Birthday</h3>
+                        <p>7 September 2006</p>
+                        <small>You're so old! 🙄🤪</small>
+                    </div>
+
+                    <div class="bio-item">
+                        <span class="bio-icon">💤</span>
+                        <h3>Lives For</h3>
+                        <p>Sleeping, eating & scrolling</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <span class="bio-icon">🪷</span>
+                        <h3>Favourite Flower</h3>
+                        <p>Lotus</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <span class="bio-icon">💙</span>
+                        <h3>Favourite Colour</h3>
+                        <p>Blue, obviously!</p>
+                    </div>
+
+                    <div class="bio-item favourite-person">
+                        <span class="bio-icon">👑</span>
+                        <h3>Favourite Person</h3>
+                        <p>Ofc Gauri, her BFFFFFFFF!</p>
+                        <small>Bruh, no one should be asking that. 😒</small>
+                    </div>
+
+                </div>
+
+                <div class="friendship-note">
+                    <p>Not just a friend, but a whole little world. 💗</p>
+                    <span>— Gauri ♡</span>
+                </div>
+
+                <button id="open-letter-button" class="primary-button">
+                    One Last Secret For You... 💌
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- SCREEN 4: THE ROYAL LETTER -->
+        <section id="letter-screen" class="screen">
+
+            <div class="letter-container">
+
+                <p class="eyebrow">A MESSAGE FROM THE HEART</p>
+
+                <h2>For My Suneo 💙</h2>
+
+                <p class="letter-intro">
+                    There's something I've been wanting to tell you...
+                </p>
+
+                <!-- CLOSED ENVELOPE -->
+                <button
+                    id="envelope"
+                    class="envelope"
+                    type="button"
+                    aria-label="Tap to open Gauri's secret letter"
+                >
+                    <span class="envelope-back"></span>
+                    <span class="letter-preview"></span>
+                    <span class="envelope-flap"></span>
+                    <span class="envelope-front"></span>
+                    <span class="wax-seal">♡</span>
+                </button>
+
+                <p id="tap-instruction" class="tap-instruction">
+                    ✨ Tap to open your secret letter ✨
+                </p>
+
+                <!-- OPEN LETTER -->
+                <article id="secret-letter" class="secret-letter" hidden>
+
+                    <div class="letter-paper">
+
+                        <div class="letter-heading">
+                            <span>♡ A LITTLE LETTER ♡</span>
+                            <span>For Sanya, with love</span>
+                        </div>
+
+                        <p class="letter-greeting">
+                            Hey dear, 💙
+                        </p>
+
+                        <div id="letter-content" class="letter-content">
+
+                            Hey dear mere pass jyada kuch kehne ko to nahi hai 😅but itna kahoongi you are the bestest thing ever happens to me in my life 💖 😊. Honestly meri itni friendship hui and kucho ko maine bff maana but never ever feel like protect them , idk why but for the first time in my life i feel like protecting this friendship and before i have never feel the fear of loosing friend 🧡 but now i am scared to loose you 😥. You're always in my heart ❤️ 💙
+
+                            <br><br>
+
+                            Chal abb bhot senti ho gaya 🙄ye letter. mai literally😂 at the point website banane se pehle likh ri hoo 😑 agar website na bhi ban paayi to mai na ye hi bhejdoongi🤣. Pata hai kya maine jaise hi tera voice note suna waise hi likhne baith gayi hoo 🥲 abb dekh le mere efforts tu 😏 and haa dont mind my typi errors 😅 😄 tu to meri jaan hai sab smjh jayegi 😘
+
+                        </div>
+
+                        <p class="letter-signature">
+                            Forever your BFF,<br>
+                            <span>Gauri 💙</span>
+                        </p>
+
+                        <div class="letter-footer">
+                            MADE WITH ALL MY HEART ♡
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <button id="back-to-profile" class="secondary-button">
+                    ↶ Back to Sanya's World
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        A tiny universe made for one special human. 💙
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
